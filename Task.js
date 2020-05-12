@@ -4,9 +4,8 @@ class Task {
       this.id = id;
       this.title = title;
       this.desc = desc;
-      this.parents = [];
+      this.parents = null;
       this.children = [];
-      this.attachments = [];
    }
 }
 

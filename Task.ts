@@ -1,6 +1,4 @@
 type ID = number;
-type TASK_UUID = ID;
-type FILE_UUID = ID;
 
 /**
  * Don't try modifying this because it doesn't do anything
@@ -21,11 +19,11 @@ export interface TaskImmutable {
    toString(): string;
 }
 
-export interface Task extends TaskImmutable {
+export interface Task {
    id: ID;
    title: string;
    desc: string;
-   parents: TASK_UUID[];
-   children: TASK_UUID[];
-   attachments: FILE_UUID[];
+   parents: number[];
+   children: number[];
+   attachments: number[];
 }
