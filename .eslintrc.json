@@ -1,0 +1,7 @@
+{
+   "extends": "@coalpha",
+   "env": {
+      "node": true,
+      "browser": true,
+   }
+}

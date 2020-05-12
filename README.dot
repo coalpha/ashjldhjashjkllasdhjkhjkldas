@@ -1,0 +1,20 @@
+digraph todothing {
+   compound=true;
+   subgraph cluster0 {
+      label="persistence"
+      database
+      server -> database
+   }
+
+   subgraph cluster1 {
+      label="ECS"
+      NetECS -> server
+      LocalECS -> database
+   }
+
+   subgraph cluster2 {
+      label="clients"
+      web -> NetECS
+      cli -> LocalECS [lhead=cluster1];
+   }
+}
