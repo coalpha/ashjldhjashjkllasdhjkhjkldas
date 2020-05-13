@@ -1,7 +1,0 @@
-- title
-- description
-- due date
-- due time
-- attachments (foreign key)
-- children
-- parents
